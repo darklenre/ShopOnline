@@ -10,7 +10,7 @@ public static class DtoConversions
     {
         return (from product in products
             join productCategory in productCategories
-                on product.Id equals productCategory.Id
+                on product.CategoryId equals productCategory.Id
             select new ProductDto
             {
                 Id = product.Id,
